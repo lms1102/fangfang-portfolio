@@ -1,143 +1,139 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio: Fang Fang Tagebucheintrag 3. März 2020</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fang Fang – Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Caveat&display=swap" rel="stylesheet" />
   <style>
-    /* Fixe Navigation oben */
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding-top: 60px; /* Platz für die fixe Nav */
-      background: #f9f9f9;
+      font-family: 'Merriweather', serif;
+      background-color: #f9f9f7;
       color: #333;
+      line-height: 1.6;
     }
-    nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      background: #004466;
-      color: white;
-      height: 50px;
+    header {
+      background-color: #e0e0dc;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      padding: 0 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-      z-index: 1000;
     }
     nav a {
-      color: white;
-      margin-right: 15px;
+      margin-left: 1rem;
       text-decoration: none;
+      color: #444;
       font-weight: bold;
     }
     nav a:hover {
       text-decoration: underline;
     }
-    main {
+    h1, h2, h3 {
+      font-family: 'Caveat', cursive;
+      color: #2e2e2c;
+    }
+    section {
+      padding: 2rem;
       max-width: 900px;
-      margin: 20px auto;
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin: 0 auto;
     }
-    /* Akkordeon-Stil */
-    details {
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      padding: 10px;
-      background: #e6f0f3;
-    }
-    summary {
-      font-weight: bold;
-      cursor: pointer;
-      outline: none;
-    }
-    summary:hover {
-      color: #004466;
-    }
-    a.source-link {
-      color: #004466;
+    .quote {
+      border-left: 4px solid #aaa;
+      margin: 1.5rem 0;
+      padding-left: 1rem;
       font-style: italic;
+      color: #555;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #888;
     }
   </style>
 </head>
 <body>
+  <header>
+    <div><strong>Fang Fang Portfolio</strong></div>
+    <nav>
+      <a href="#introduction">Introduction</a>
+      <a href="#source">Source</a>
+      <a href="#summary">Summary</a>
+      <a href="#context">Context</a>
+      <a href="#analysis">Analysis</a>
+      <a href="#conclusion">Conclusion</a>
+      <a href="#references">References</a>
+    </nav>
+  </header>
 
-<nav>
-  <a href="#einleitung">Einleitung</a>
-  <a href="#quelle">Quelle</a>
-  <a href="#inhalt">Kurzinhalt</a>
-  <a href="#kontext">Kontextmaterialien</a>
-  <a href="#analyse">Analyse</a>
-  <a href="#fazit">Fazit</a>
-  <a href="#literatur">Literatur</a>
-</nav>
-
-<main>
-  <section id="einleitung">
-    <details open>
-      <summary>1. Einleitung</summary>
-      <p>Dieses Portfolio analysiert einen ausgewählten Tagebucheintrag der chinesischen Autorin Fang Fang vom 3. März 2020...</p>
-    </details>
+  <section id="introduction">
+    <h2>1. Introduction</h2>
+    <p>
+      This portfolio analyzes a selected diary entry by Chinese author Fang Fang from March 3, 2020, which is part of her "Wuhan Diary". The aim is to contextualize the text historically, socially, and politically through accompanying materials.
+    </p>
   </section>
 
-  <section id="quelle">
-    <details>
-      <summary>2. Textausschnitt / Quelle</summary>
-      <p>Fang Fang: <em>Too Many People and Things Ignored</em>. Caixin Blog, 3. März 2020.<br>
-         <a href="https://www.caixinglobal.com/2020-03-03" target="_blank" class="source-link">https://www.caixinglobal.com/2020-03-03</a></p>
-    </details>
+  <section id="source">
+    <h2>2. Source</h2>
+    <p>
+      Fang Fang: <em>Too Many People and Things Ignored</em>. Caixin Blog, March 3, 2020. <br />
+      URL: <a href="https://www.caixinglobal.com/2020-03-03" target="_blank">caixinglobal.com</a>
+    </p>
   </section>
 
-  <section id="inhalt">
-    <details>
-      <summary>3. Kurzinhalt des Tagebucheintrags</summary>
-      <p>Fang Fang beschreibt an diesem Tag die düstere Stimmung in Wuhan, die Reaktionen auf neue Fallzahlen...</p>
-    </details>
+  <section id="summary">
+    <h2>3. Summary</h2>
+    <p>
+      Fang Fang describes the grim atmosphere in Wuhan, reactions to new case numbers, political consequences of outbreaks in prisons, and the suffering of patients and medical staff. She recalls the suicide of Chang Kai, calls for journalistic investigation, and criticizes the disregard for volunteers and migrant workers.
+    </p>
   </section>
 
-  <section id="kontext">
-    <details>
-      <summary>4. Kontextmaterialien</summary>
-      <p>Hier findest du eine Übersicht der gesammelten Materialien...</p>
-      <ul>
-        <li><strong>Datum & Wetter:</strong> 3. März 2020, Regen, ca. 10°C.</li>
-        <li><strong>Corona-Lage:</strong> 196 neue Fälle, darunter 233 in Gefängnissen. <a href="https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200303-sitrep-43-covid-19.pdf" target="_blank" class="source-link">WHO Report</a></li>
-        <li><strong>Personen & Ereignisse:</strong> Suizid von Chang Kai, Bericht aus Hankou Hospital.</li>
-        <li><strong>Gesellschaftliche Reaktionen:</strong> Artikel zu Medienzensur, Rolle der Freiwilligen usw.</li>
-      </ul>
-    </details>
+  <section id="context">
+    <h2>4. Contextual Materials</h2>
+    <ul>
+      <li><strong>Weather:</strong> Rainy, 10°C (Wunderground archive)</li>
+      <li><strong>COVID-19 Situation:</strong> 196 new cases, including 233 in prisons (WHO Report, March 3, 2020)</li>
+      <li><strong>Chang Kai:</strong> Suicide due to lack of medical care (The Guardian)</li>
+      <li><strong>Zeng Guang quote:</strong> "How could I have known ..." – reflects on official responsibility</li>
+      <li><strong>Volunteers:</strong> Wang Yong, Wu You – reported by SCMP & Rest of World</li>
+      <li><strong>Migrant Workers:</strong> Return-to-work appeals circulated via WeChat (China Digital Times)</li>
+    </ul>
   </section>
 
-  <section id="analyse">
-    <details>
-      <summary>5. Kurze Analyse (wissenschaftlich)</summary>
-      <p>Der Eintrag thematisiert das Spannungsfeld zwischen Überforderung und individueller Verantwortung...</p>
-    </details>
+  <section id="analysis">
+    <h2>5. Analysis</h2>
+    <p>
+      The entry from March 3, 2020 focuses on the tension between collective overload and individual responsibility. Fang Fang’s language shifts between documentary sobriety and personal empathy. Her critique is subtle but firm: the state was overwhelmed while individuals stepped up. The contrast between governmental passivity and civic initiative runs throughout the entry.
+    </p>
+    <blockquote class="quote">
+      “Too many people and things have been ignored.” – Fang Fang
+    </blockquote>
   </section>
 
-  <section id="fazit">
-    <details>
-      <summary>6. Fazit / Schlussbemerkung</summary>
-      <p>Der Tagebucheintrag zeigt exemplarisch Fang Fangs kritische Rolle in der Pandemiekommunikation...</p>
-    </details>
+  <section id="conclusion">
+    <h2>6. Conclusion</h2>
+    <p>
+      The analyzed entry exemplifies Fang Fang’s diary project, interweaving personal experience, systemic critique, and cultural reflection. The additional materials confirm many of her observations and underscore her role as a critical voice during an exceptional period.
+    </p>
   </section>
 
-  <section id="literatur">
-    <details>
-      <summary>7. Literatur- & Quellenverzeichnis</summary>
-      <ul>
-        <li>Fang, Fang: <em>Too Many People and Things Ignored</em>, Caixin Blog, 3.3.2020</li>
-        <li>WHO: <em>Coronavirus Situation Report 43</em>, 3.3.2020</li>
-        <li>The Guardian: <em>Chinese director dies of coronavirus</em>, 28.2.2020</li>
-        <li><a href="https://www.wunderground.com/history/daily/cn/wuhan" target="_blank" class="source-link">Wetterdaten Wuhan</a></li>
-      </ul>
-    </details>
+  <section id="references">
+    <h2>7. References</h2>
+    <ul>
+      <li>Fang, Fang: <em>Too Many People and Things Ignored</em>, Caixin Blog, 3.3.2020</li>
+      <li>WHO: <em>Situation Report 43</em>, 3.3.2020</li>
+      <li>The Guardian: <em>Chinese director dies of coronavirus</em>, 28.2.2020</li>
+      <li>Weather data: wunderground.com/history/daily/cn/wuhan</li>
+    </ul>
   </section>
-</main>
 
+  <footer>
+    <p>© 2025 Portfolio on Fang Fang's Diary Analysis – created with HTML & care</p>
+  </footer>
 </body>
 </html>
+
