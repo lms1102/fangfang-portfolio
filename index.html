@@ -36,10 +36,40 @@
       font-family: 'Caveat', cursive;
       color: #2e2e2c;
     }
-    section {
-      padding: 2rem;
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 900px;
+      margin: 2rem auto 0;
+      padding: 0 2rem;
+    }
+    .tab-button {
+      background-color: #ddd;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin-right: 0.5rem;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    .tab-button.active {
+      background-color: #bbb;
+    }
+    .tab-content {
+      display: none;
       max-width: 900px;
       margin: 0 auto;
+      padding: 2rem;
+      border-top: 1px solid #ccc;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
     .quote {
       border-left: 4px solid #aaa;
@@ -60,24 +90,28 @@
   <header>
     <div><strong>Fang Fang Portfolio</strong></div>
     <nav>
-      <a href="#introduction">Introduction</a>
-      <a href="#source">Source</a>
-      <a href="#summary">Summary</a>
-      <a href="#context">Context</a>
-      <a href="#analysis">Analysis</a>
-      <a href="#conclusion">Conclusion</a>
-      <a href="#references">References</a>
+      <a href="#">Home</a>
     </nav>
   </header>
 
-  <section id="introduction">
+  <div class="tabs">
+    <button class="tab-button active" onclick="showTab('introduction')">1. Introduction</button>
+    <button class="tab-button" onclick="showTab('source')">2. Source</button>
+    <button class="tab-button" onclick="showTab('summary')">3. Summary</button>
+    <button class="tab-button" onclick="showTab('context')">4. Context</button>
+    <button class="tab-button" onclick="showTab('analysis')">5. Analysis</button>
+    <button class="tab-button" onclick="showTab('conclusion')">6. Conclusion</button>
+    <button class="tab-button" onclick="showTab('references')">7. References</button>
+  </div>
+
+  <section id="introduction" class="tab-content active">
     <h2>1. Introduction</h2>
     <p>
       This portfolio analyzes a selected diary entry by Chinese author Fang Fang from March 3, 2020, which is part of her "Wuhan Diary". The aim is to contextualize the text historically, socially, and politically through accompanying materials.
     </p>
   </section>
 
-  <section id="source">
+  <section id="source" class="tab-content">
     <h2>2. Source</h2>
     <p>
       Fang Fang: <em>Too Many People and Things Ignored</em>. Caixin Blog, March 3, 2020. <br />
@@ -85,14 +119,14 @@
     </p>
   </section>
 
-  <section id="summary">
+  <section id="summary" class="tab-content">
     <h2>3. Summary</h2>
     <p>
       Fang Fang describes the grim atmosphere in Wuhan, reactions to new case numbers, political consequences of outbreaks in prisons, and the suffering of patients and medical staff. She recalls the suicide of Chang Kai, calls for journalistic investigation, and criticizes the disregard for volunteers and migrant workers.
     </p>
   </section>
 
-  <section id="context">
+  <section id="context" class="tab-content">
     <h2>4. Contextual Materials</h2>
     <ul>
       <li><strong>Weather:</strong> Rainy, 10°C (Wunderground archive)</li>
@@ -104,7 +138,7 @@
     </ul>
   </section>
 
-  <section id="analysis">
+  <section id="analysis" class="tab-content">
     <h2>5. Analysis</h2>
     <p>
       The entry from March 3, 2020 focuses on the tension between collective overload and individual responsibility. Fang Fang’s language shifts between documentary sobriety and personal empathy. Her critique is subtle but firm: the state was overwhelmed while individuals stepped up. The contrast between governmental passivity and civic initiative runs throughout the entry.
@@ -114,14 +148,14 @@
     </blockquote>
   </section>
 
-  <section id="conclusion">
+  <section id="conclusion" class="tab-content">
     <h2>6. Conclusion</h2>
     <p>
       The analyzed entry exemplifies Fang Fang’s diary project, interweaving personal experience, systemic critique, and cultural reflection. The additional materials confirm many of her observations and underscore her role as a critical voice during an exceptional period.
     </p>
   </section>
 
-  <section id="references">
+  <section id="references" class="tab-content">
     <h2>7. References</h2>
     <ul>
       <li>Fang, Fang: <em>Too Many People and Things Ignored</em>, Caixin Blog, 3.3.2020</li>
@@ -134,6 +168,16 @@
   <footer>
     <p>© 2025 Portfolio on Fang Fang's Diary Analysis – created with HTML & care</p>
   </footer>
+
+  <script>
+    function showTab(id) {
+      const tabs = document.querySelectorAll('.tab-content');
+      const buttons = document.querySelectorAll('.tab-button');
+      tabs.forEach(tab => tab.classList.remove('active'));
+      buttons.forEach(btn => btn.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
 </body>
 </html>
-
