@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio: Fang Fang Tagebucheintrag 3. März 2020</title>
+  <style>
+    /* Fixe Navigation oben */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding-top: 60px; /* Platz für die fixe Nav */
+      background: #f9f9f9;
+      color: #333;
+    }
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: #004466;
+      color: white;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      margin-right: 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    /* Akkordeon-Stil */
+    details {
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      background: #e6f0f3;
+    }
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      outline: none;
+    }
+    summary:hover {
+      color: #004466;
+    }
+    a.source-link {
+      color: #004466;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#einleitung">Einleitung</a>
+  <a href="#quelle">Quelle</a>
+  <a href="#inhalt">Kurzinhalt</a>
+  <a href="#kontext">Kontextmaterialien</a>
+  <a href="#analyse">Analyse</a>
+  <a href="#fazit">Fazit</a>
+  <a href="#literatur">Literatur</a>
+</nav>
+
+<main>
+  <section id="einleitung">
+    <details open>
+      <summary>1. Einleitung</summary>
+      <p>Dieses Portfolio analysiert einen ausgewählten Tagebucheintrag der chinesischen Autorin Fang Fang vom 3. März 2020...</p>
+    </details>
+  </section>
+
+  <section id="quelle">
+    <details>
+      <summary>2. Textausschnitt / Quelle</summary>
+      <p>Fang Fang: <em>Too Many People and Things Ignored</em>. Caixin Blog, 3. März 2020.<br>
+         <a href="https://www.caixinglobal.com/2020-03-03" target="_blank" class="source-link">https://www.caixinglobal.com/2020-03-03</a></p>
+    </details>
+  </section>
+
+  <section id="inhalt">
+    <details>
+      <summary>3. Kurzinhalt des Tagebucheintrags</summary>
+      <p>Fang Fang beschreibt an diesem Tag die düstere Stimmung in Wuhan, die Reaktionen auf neue Fallzahlen...</p>
+    </details>
+  </section>
+
+  <section id="kontext">
+    <details>
+      <summary>4. Kontextmaterialien</summary>
+      <p>Hier findest du eine Übersicht der gesammelten Materialien...</p>
+      <ul>
+        <li><strong>Datum & Wetter:</strong> 3. März 2020, Regen, ca. 10°C.</li>
+        <li><strong>Corona-Lage:</strong> 196 neue Fälle, darunter 233 in Gefängnissen. <a href="https://www.who.int/docs/default-source/coronaviruse/situation-reports/20200303-sitrep-43-covid-19.pdf" target="_blank" class="source-link">WHO Report</a></li>
+        <li><strong>Personen & Ereignisse:</strong> Suizid von Chang Kai, Bericht aus Hankou Hospital.</li>
+        <li><strong>Gesellschaftliche Reaktionen:</strong> Artikel zu Medienzensur, Rolle der Freiwilligen usw.</li>
+      </ul>
+    </details>
+  </section>
+
+  <section id="analyse">
+    <details>
+      <summary>5. Kurze Analyse (wissenschaftlich)</summary>
+      <p>Der Eintrag thematisiert das Spannungsfeld zwischen Überforderung und individueller Verantwortung...</p>
+    </details>
+  </section>
+
+  <section id="fazit">
+    <details>
+      <summary>6. Fazit / Schlussbemerkung</summary>
+      <p>Der Tagebucheintrag zeigt exemplarisch Fang Fangs kritische Rolle in der Pandemiekommunikation...</p>
+    </details>
+  </section>
+
+  <section id="literatur">
+    <details>
+      <summary>7. Literatur- & Quellenverzeichnis</summary>
+      <ul>
+        <li>Fang, Fang: <em>Too Many People and Things Ignored</em>, Caixin Blog, 3.3.2020</li>
+        <li>WHO: <em>Coronavirus Situation Report 43</em>, 3.3.2020</li>
+        <li>The Guardian: <em>Chinese director dies of coronavirus</em>, 28.2.2020</li>
+        <li><a href="https://www.wunderground.com/history/daily/cn/wuhan" target="_blank" class="source-link">Wetterdaten Wuhan</a></li>
+      </ul>
+    </details>
+  </section>
+</main>
+
+</body>
+</html>
